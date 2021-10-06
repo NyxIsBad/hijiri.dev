@@ -1,6 +1,103 @@
+.container { 
+  display: flex; 
+  flex-direction: column;
+  max-width: 1424px;
+  width: calc(100%-64px);
+  margin: 0 auto;
+}
+.headerWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+  margin-bottom: 32px;
+  border-bottom: 1px solid;
+  -o-border-image: linear-gradient(90deg, var(--background-primary) 0%,var(--to-gradient-color) 50%, var(--background-primary) 100%);
+  border-image: linear-gradient(90deg, var(--background-primary) 0%,var(--to-gradient-color) 50%, var(--background-primary) 100%);
+}
+.header {
+  display: flex;
+  align-items: center;
+}
+.header img {
+  width: 72px;
+  height: 72px;
+  margin-right: 16px;
+  border-radius: 10%;
+}
+.header > div {
+  display: flex;
+  flex-direction: column;
+}
+.header .title {
+  font-weight: 700;
+  font-size: 32px;
+  font: var(--font);
+}
+.header .subtitle {
+  font-weight: 500;
+  font-size: 24px;
+  font: var(--font);
+}
+.content {
+  max-width: 1024px;
+  margin: 0 auto;
+  width: 100%;
+}
+.section:not(:first-of-type){
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid;
+  -o-border-image: linear-gradient (90deg, var(--from-gradient-color) 0%, var(--background-primary) 50%) 1;
+  border-image: linear-gradient (90deg, var(--from-gradient-color) 0%, var(--background-primary) 50%) 1;
+}
+.section .title {
+  margin: 0 0 16px;
+  font-size: 22px;
+  font-weight: 600;
+  font: var(--font);
+  letter-spacing: 3px;
+}
+* {
+  box-sizing: border-box;
+}
+body,html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font: var(--font);
+  letter-spacing: 0.3px;
+}
+body {
+  color: #ddd;
+  background-color: var(--background-primary);
+}
+p {
+  margin: 0;
+}
+p:not(:last-of-type){
+  margin-bottom: 16px;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+code {
+  font-family: JetBrains Mono;
+  font-size: 13px;
+  padding: 2px 4px;
+  background-color: var(--background-secondary);
+}
 
-.testclass {
-  color: black;
-  font: Lato; //The only good font
-  font-size: 140px;
+root:{
+  --background-primary: #323232;
+  --background-secondary: #272727;
+  --background-tertiary: #222222;
+  --main-color: rgba(129,0,187,1);
+  --from-gradient-color: rgba(237,0,240,1);
+  --to-gradient-color: var(--main-color);
+  --font: Arial;
 }
