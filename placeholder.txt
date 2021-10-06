@@ -1,5 +1,0 @@
-<div class="right">
-        <!--> <a href="/join">Discord</a>
-        <a href="https://github.com/ClearVision/ClearVision-v6">GitHub</a>
-        <a href="https://gitlab.com/ClearVision">GitLab</a> </!-->
-      </div>
